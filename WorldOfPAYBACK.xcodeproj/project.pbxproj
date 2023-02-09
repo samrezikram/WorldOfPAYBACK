@@ -14,6 +14,10 @@
 		ABAE9BCA299534B9007CCF7A /* WorldOfPAYBACKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE9BC9299534B9007CCF7A /* WorldOfPAYBACKTests.swift */; };
 		ABAE9BD4299534B9007CCF7A /* WorldOfPAYBACKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE9BD3299534B9007CCF7A /* WorldOfPAYBACKUITests.swift */; };
 		ABAE9BD6299534B9007CCF7A /* WorldOfPAYBACKUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE9BD5299534B9007CCF7A /* WorldOfPAYBACKUITestsLaunchTests.swift */; };
+		ABAE9BE429955640007CCF7A /* PaybackAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE9BE329955640007CCF7A /* PaybackAgent.swift */; };
+		ABAE9BE62995566E007CCF7A /* PaybackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE9BE52995566E007CCF7A /* PaybackService.swift */; };
+		ABAE9BEC29955E95007CCF7A /* TransactionHistory.model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE9BEB29955E95007CCF7A /* TransactionHistory.model.swift */; };
+		ABAE9BF0299569E6007CCF7A /* PBTransactions.json in Resources */ = {isa = PBXBuildFile; fileRef = ABAE9BEF299569E6007CCF7A /* PBTransactions.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		ABAE9BCF299534B9007CCF7A /* WorldOfPAYBACKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldOfPAYBACKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAE9BD3299534B9007CCF7A /* WorldOfPAYBACKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOfPAYBACKUITests.swift; sourceTree = "<group>"; };
 		ABAE9BD5299534B9007CCF7A /* WorldOfPAYBACKUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOfPAYBACKUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ABAE9BE329955640007CCF7A /* PaybackAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaybackAgent.swift; sourceTree = "<group>"; };
+		ABAE9BE52995566E007CCF7A /* PaybackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaybackService.swift; sourceTree = "<group>"; };
+		ABAE9BEB29955E95007CCF7A /* TransactionHistory.model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistory.model.swift; sourceTree = "<group>"; };
+		ABAE9BEF299569E6007CCF7A /* PBTransactions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PBTransactions.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +102,14 @@
 		ABAE9BB7299534B7007CCF7A /* WorldOfPAYBACK */ = {
 			isa = PBXGroup;
 			children = (
+				ABAE9BED299564AD007CCF7A /* TransactionList */,
+				ABAE9BE729955CCF007CCF7A /* Models */,
+				ABAE9BE229955615007CCF7A /* NetworkService */,
 				ABAE9BB8299534B7007CCF7A /* WorldOfPAYBACKApp.swift */,
 				ABAE9BBA299534B7007CCF7A /* ContentView.swift */,
 				ABAE9BBC299534B9007CCF7A /* Assets.xcassets */,
 				ABAE9BBE299534B9007CCF7A /* Preview Content */,
+				ABAE9BEE299569C4007CCF7A /* SupportingFiles */,
 			);
 			path = WorldOfPAYBACK;
 			sourceTree = "<group>";
@@ -125,6 +137,62 @@
 				ABAE9BD5299534B9007CCF7A /* WorldOfPAYBACKUITestsLaunchTests.swift */,
 			);
 			path = WorldOfPAYBACKUITests;
+			sourceTree = "<group>";
+		};
+		ABAE9BE229955615007CCF7A /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				ABAE9BE329955640007CCF7A /* PaybackAgent.swift */,
+				ABAE9BE52995566E007CCF7A /* PaybackService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		ABAE9BE729955CCF007CCF7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ABAE9BEA29955D09007CCF7A /* Data */,
+				ABAE9BE929955CE9007CCF7A /* App */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ABAE9BE829955CD9007CCF7A /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				ABAE9BEB29955E95007CCF7A /* TransactionHistory.model.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		ABAE9BE929955CE9007CCF7A /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ABAE9BEA29955D09007CCF7A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				ABAE9BE829955CD9007CCF7A /* Http */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		ABAE9BED299564AD007CCF7A /* TransactionList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TransactionList;
+			sourceTree = "<group>";
+		};
+		ABAE9BEE299569C4007CCF7A /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				ABAE9BEF299569E6007CCF7A /* PBTransactions.json */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABAE9BC0299534B9007CCF7A /* Preview Assets.xcassets in Resources */,
+				ABAE9BF0299569E6007CCF7A /* PBTransactions.json in Resources */,
 				ABAE9BBD299534B9007CCF7A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,7 +327,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABAE9BBB299534B7007CCF7A /* ContentView.swift in Sources */,
+				ABAE9BE429955640007CCF7A /* PaybackAgent.swift in Sources */,
 				ABAE9BB9299534B7007CCF7A /* WorldOfPAYBACKApp.swift in Sources */,
+				ABAE9BE62995566E007CCF7A /* PaybackService.swift in Sources */,
+				ABAE9BEC29955E95007CCF7A /* TransactionHistory.model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
