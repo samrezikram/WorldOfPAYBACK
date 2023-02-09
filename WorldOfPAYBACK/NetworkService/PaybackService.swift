@@ -22,18 +22,27 @@ extension PaybackService {
     return agent.run(request)
   }
   
-  static func transactions() -> TransactionHistory? {
-    if let url = Bundle.main.url(forResource: "PBTransactions", withExtension: "json") {
-      do {
-        let data = try Data(contentsOf: url)
-        let decoder = JSONDecoder()
-        let jsonData = try decoder.decode(TransactionHistory.self, from: data)
-        return jsonData
-      } catch {
-        print("error:\(error)")
-      }
-    }
-    return nil
+  static func transactions() -> AnyPublisher<TransactionHistory, Error> {
+    Bundle.main.readFile(file: "PBTransactions", ext: "json")
+      .decode(type: TransactionHistory.self, decoder: JSONDecoder())
+      .mapError { error in
+        return error
+      }.eraseToAnyPublisher()
   }
-  
+}
+
+extension Bundle{
+  func readFile(file: String, ext: String) -> AnyPublisher<Data, Error> {
+    self.url(forResource: file, withExtension: ext)
+      .publisher
+      .tryMap { string in
+        guard let data = try? Data(contentsOf: string) else {
+          fatalError("Failed to load \(file) from bundle.")
+        }
+        return data
+      }
+      .mapError { error in
+        return error
+      }.eraseToAnyPublisher()
+  }
 }
