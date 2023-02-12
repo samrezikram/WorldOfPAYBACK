@@ -9,29 +9,27 @@ import SwiftUI
 
 @main
 struct WorldOfPAYBACKApp: App {
-  
-  @Environment(\.scenePhase) var scenePhase
-  
-  init() {
-    // App Lunch tasks
-  }
-  
-  var body: some Scene {
-      WindowGroup {
-          ContentView()
-      }
-      .onChange(of: scenePhase) { (newScenePhase) in
-        switch newScenePhase {
-          case .background:
-          break;
-          case .inactive:
-          break;
-          case .active:
-          break;
-          @unknown default:
-          break;
-        }
-      }
-  }
-}
+    @Environment(\.scenePhase) var scenePhase
 
+    init() {
+        // App Lunch tasks
+    }
+
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+        .onChange(of: scenePhase) { newScenePhase in
+            switch newScenePhase {
+            case .background:
+                break
+            case .inactive:
+                break
+            case .active:
+                break
+            @unknown default:
+                break
+            }
+        }
+    }
+}

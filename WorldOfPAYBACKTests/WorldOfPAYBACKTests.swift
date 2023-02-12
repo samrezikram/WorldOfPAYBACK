@@ -5,11 +5,10 @@
 //  Created by Samrez Ikram on 09/02/2023.
 //
 
-import XCTest
 @testable import WorldOfPAYBACK
+import XCTest
 
 final class WorldOfPAYBACKTests: XCTestCase {
-
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -28,9 +27,8 @@ final class WorldOfPAYBACKTests: XCTestCase {
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }
-
 }

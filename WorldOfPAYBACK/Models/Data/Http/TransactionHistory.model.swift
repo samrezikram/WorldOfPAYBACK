@@ -8,35 +8,36 @@
 import Foundation
 
 // MARK: - TransactionHistory
+
 struct TransactionHistory: Codable {
-  let transactionItems: [TransactionHistoryItem?]
+    let items: [TransactionHistoryItem]
 }
 
 // MARK: - Item
+
 struct TransactionHistoryItem: Codable {
-  let partnerDisplayName: String
-  let alias: TransactionAlias?
-  let category: Int
-  let transactionDetail: TransactionDetail?
+    let partnerDisplayName: String
+    let alias: TransactionAlias
+    let category: Int
+    let transactionDetail: TransactionDetail
 }
 
 // MARK: - Alias
+
 struct TransactionAlias: Codable {
-  let reference: String
+    let reference: String
 }
 
 // MARK: - TransactionDetail
-struct TransactionDetail: Codable {
-  let description: TransactionDescription?
-  let bookingDate: Date
-  let value: TransactionValue
-}
 
-struct TransactionDescription: Codable {
-  let punkteSammeln: String
+struct TransactionDetail: Codable {
+    let description: String?
+    let bookingDate: String
+    let value: TransactionValue
 }
 
 // MARK: - Value
+
 struct TransactionValue: Codable {
     let amount: Int
     let currency: String

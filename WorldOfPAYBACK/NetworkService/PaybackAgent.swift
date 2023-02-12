@@ -5,8 +5,8 @@
 //  Created by Samrez Ikram on 09/02/2023.
 //
 
-import Foundation
 import Combine
+import Foundation
 
 struct PaybackAgent {
     func run<T: Decodable>(_ request: URLRequest) -> AnyPublisher<T, Error> {
@@ -17,5 +17,5 @@ struct PaybackAgent {
             .decode(type: T.self, decoder: JSONDecoder())
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
-  }
+    }
 }

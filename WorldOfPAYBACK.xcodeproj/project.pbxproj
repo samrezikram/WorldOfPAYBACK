@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB44C6E72999127E0001540F /* TransactionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB44C6E62999127E0001540F /* TransactionDetailViewModel.swift */; };
+		AB44C6E92999177F0001540F /* TransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB44C6E82999177F0001540F /* TransactionDetailView.swift */; };
 		ABAE9BB9299534B7007CCF7A /* WorldOfPAYBACKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE9BB8299534B7007CCF7A /* WorldOfPAYBACKApp.swift */; };
 		ABAE9BBB299534B7007CCF7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE9BBA299534B7007CCF7A /* ContentView.swift */; };
 		ABAE9BBD299534B9007CCF7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAE9BBC299534B9007CCF7A /* Assets.xcassets */; };
@@ -18,6 +20,15 @@
 		ABAE9BE62995566E007CCF7A /* PaybackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE9BE52995566E007CCF7A /* PaybackService.swift */; };
 		ABAE9BEC29955E95007CCF7A /* TransactionHistory.model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE9BEB29955E95007CCF7A /* TransactionHistory.model.swift */; };
 		ABAE9BF0299569E6007CCF7A /* PBTransactions.json in Resources */ = {isa = PBXBuildFile; fileRef = ABAE9BEF299569E6007CCF7A /* PBTransactions.json */; };
+		ABAE9BF2299580CB007CCF7A /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE9BF1299580CB007CCF7A /* TransactionListView.swift */; };
+		ABAE9BF4299584F4007CCF7A /* TransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE9BF3299584F4007CCF7A /* TransactionListViewModel.swift */; };
+		ABAE9BF729959005007CCF7A /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE9BF629959005007CCF7A /* View+Ext.swift */; };
+		ABAE9BFB29959385007CCF7A /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE9BF929959385007CCF7A /* System.swift */; };
+		ABAE9BFC29959385007CCF7A /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE9BFA29959385007CCF7A /* Feedback.swift */; };
+		ABAE9BFF299593BD007CCF7A /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE9BFE299593BD007CCF7A /* Spinner.swift */; };
+		ABAE9C042995AE0E007CCF7A /* String +Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE9C032995AE0E007CCF7A /* String +Extensions.swift */; };
+		ABAE9C092995FC75007CCF7A /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE9C082995FC75007CCF7A /* BottomSheetView.swift */; };
+		ABAE9C0C29973D20007CCF7A /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE9C0B29973D20007CCF7A /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB44C6E62999127E0001540F /* TransactionDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewModel.swift; sourceTree = "<group>"; };
+		AB44C6E82999177F0001540F /* TransactionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailView.swift; sourceTree = "<group>"; };
 		ABAE9BB5299534B7007CCF7A /* WorldOfPAYBACK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldOfPAYBACK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAE9BB8299534B7007CCF7A /* WorldOfPAYBACKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOfPAYBACKApp.swift; sourceTree = "<group>"; };
 		ABAE9BBA299534B7007CCF7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +65,16 @@
 		ABAE9BE52995566E007CCF7A /* PaybackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaybackService.swift; sourceTree = "<group>"; };
 		ABAE9BEB29955E95007CCF7A /* TransactionHistory.model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistory.model.swift; sourceTree = "<group>"; };
 		ABAE9BEF299569E6007CCF7A /* PBTransactions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PBTransactions.json; sourceTree = "<group>"; };
+		ABAE9BF1299580CB007CCF7A /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
+		ABAE9BF3299584F4007CCF7A /* TransactionListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListViewModel.swift; sourceTree = "<group>"; };
+		ABAE9BF629959005007CCF7A /* View+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		ABAE9BF929959385007CCF7A /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		ABAE9BFA29959385007CCF7A /* Feedback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
+		ABAE9BFE299593BD007CCF7A /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		ABAE9C0029959A2D007CCF7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		ABAE9C032995AE0E007CCF7A /* String +Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String +Extensions.swift"; sourceTree = "<group>"; };
+		ABAE9C082995FC75007CCF7A /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		ABAE9C0B29973D20007CCF7A /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB44C6E5299912610001540F /* TransactionDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				AB44C6E62999127E0001540F /* TransactionDetailViewModel.swift */,
+				AB44C6E82999177F0001540F /* TransactionDetailView.swift */,
+			);
+			path = TransactionDetailView;
+			sourceTree = "<group>";
+		};
 		ABAE9BAC299534B7007CCF7A = {
 			isa = PBXGroup;
 			children = (
@@ -102,7 +134,13 @@
 		ABAE9BB7299534B7007CCF7A /* WorldOfPAYBACK */ = {
 			isa = PBXGroup;
 			children = (
+				ABAE9C0A29973D0C007CCF7A /* Utilities */,
+				ABAE9C0029959A2D007CCF7A /* Info.plist */,
+				ABAE9BF829959384007CCF7A /* Feedback */,
+				ABAE9BF529958FF5007CCF7A /* Extensions */,
 				ABAE9BED299564AD007CCF7A /* TransactionList */,
+				AB44C6E5299912610001540F /* TransactionDetailView */,
+				ABAE9BFD299593BD007CCF7A /* Controls */,
 				ABAE9BE729955CCF007CCF7A /* Models */,
 				ABAE9BE229955615007CCF7A /* NetworkService */,
 				ABAE9BB8299534B7007CCF7A /* WorldOfPAYBACKApp.swift */,
@@ -183,6 +221,8 @@
 		ABAE9BED299564AD007CCF7A /* TransactionList */ = {
 			isa = PBXGroup;
 			children = (
+				ABAE9BF3299584F4007CCF7A /* TransactionListViewModel.swift */,
+				ABAE9BF1299580CB007CCF7A /* TransactionListView.swift */,
 			);
 			path = TransactionList;
 			sourceTree = "<group>";
@@ -193,6 +233,41 @@
 				ABAE9BEF299569E6007CCF7A /* PBTransactions.json */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		ABAE9BF529958FF5007CCF7A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ABAE9BF629959005007CCF7A /* View+Ext.swift */,
+				ABAE9C032995AE0E007CCF7A /* String +Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ABAE9BF829959384007CCF7A /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				ABAE9BF929959385007CCF7A /* System.swift */,
+				ABAE9BFA29959385007CCF7A /* Feedback.swift */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		ABAE9BFD299593BD007CCF7A /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				ABAE9BFE299593BD007CCF7A /* Spinner.swift */,
+				ABAE9C082995FC75007CCF7A /* BottomSheetView.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		ABAE9C0A29973D0C007CCF7A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				ABAE9C0B29973D20007CCF7A /* Network.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +286,8 @@
 			dependencies = (
 			);
 			name = WorldOfPAYBACK;
+			packageProductDependencies = (
+			);
 			productName = WorldOfPAYBACK;
 			productReference = ABAE9BB5299534B7007CCF7A /* WorldOfPAYBACK.app */;
 			productType = "com.apple.product-type.application";
@@ -283,6 +360,8 @@
 				Base,
 			);
 			mainGroup = ABAE9BAC299534B7007CCF7A;
+			packageReferences = (
+			);
 			productRefGroup = ABAE9BB6299534B7007CCF7A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -326,11 +405,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABAE9BFF299593BD007CCF7A /* Spinner.swift in Sources */,
+				ABAE9BF729959005007CCF7A /* View+Ext.swift in Sources */,
 				ABAE9BBB299534B7007CCF7A /* ContentView.swift in Sources */,
+				ABAE9BFC29959385007CCF7A /* Feedback.swift in Sources */,
 				ABAE9BE429955640007CCF7A /* PaybackAgent.swift in Sources */,
 				ABAE9BB9299534B7007CCF7A /* WorldOfPAYBACKApp.swift in Sources */,
 				ABAE9BE62995566E007CCF7A /* PaybackService.swift in Sources */,
+				AB44C6E72999127E0001540F /* TransactionDetailViewModel.swift in Sources */,
 				ABAE9BEC29955E95007CCF7A /* TransactionHistory.model.swift in Sources */,
+				ABAE9BF2299580CB007CCF7A /* TransactionListView.swift in Sources */,
+				AB44C6E92999177F0001540F /* TransactionDetailView.swift in Sources */,
+				ABAE9C042995AE0E007CCF7A /* String +Extensions.swift in Sources */,
+				ABAE9BFB29959385007CCF7A /* System.swift in Sources */,
+				ABAE9BF4299584F4007CCF7A /* TransactionListViewModel.swift in Sources */,
+				ABAE9C0C29973D20007CCF7A /* Network.swift in Sources */,
+				ABAE9C092995FC75007CCF7A /* BottomSheetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,7 +581,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WorldOfPAYBACK/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = WorldOfPAYBACK/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -519,7 +609,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WorldOfPAYBACK/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = WorldOfPAYBACK/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
